@@ -5,7 +5,8 @@
   <!-- <Homepage data="Ramish Munawar" msg="new"/>  -->
   <!-- <childComponent /> -->
    <Templates />
-   <htmlStyle />
+   <!-- <htmlStyle /> -->
+    <DataBinding />
 </div>
 </template>
 
@@ -14,7 +15,8 @@
 // import HelloWorld from './components/HelloWorld.vue'
 // import Homepage from './components/Homepage.vue'
 // import Templates from './components/Templates.vue'
-import htmlStyle  from './components/htmlStyle.vue'
+// import htmlStyle  from './components/htmlStyle.vue'
+import DataBinding from './components/DataBinding.vue'
 export default {
   name: 'App',
   components: {
@@ -22,7 +24,8 @@ export default {
     // Homepage,
     // childComponent,
     // Templates,
-    htmlStyle
+    // htmlStyle
+    DataBinding
   }
 }
 </script>
