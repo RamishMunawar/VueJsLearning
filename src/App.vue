@@ -2,7 +2,8 @@
   <div id="app">
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld />
-  <h1>From with checkbox and radio button in vue js</h1>
+  <!-- <h1>From with checkbox and radio button in vue js</h1> -->
+  <h1>simple From in vue js</h1>
   <!-- <h1>{{ title }}</h1> -->
   <!-- <Homepage data="Ramish Munawar" msg="new"/>  -->
   <!-- <childComponent /> -->
@@ -11,7 +12,8 @@
     <!-- <DataBinding /> -->
      <!-- <Props v-bind:users='users'/> -->
       <!-- <childToParentProps v-on:changetitle="updateTitle($event)"/> -->
-       <signUp />
+       <!-- <signUp /> -->
+        <simpleFrom />
 </div>
 </template>
 
@@ -24,7 +26,8 @@
 // import DataBinding from './components/DataBinding.vue'
 // import Props from './components/Props.vue'
 // import childToParentProps from './components/childToParentProps.vue'
-import signUp  from './components/signUp.vue'
+// import signUp  from './components/signUp.vue'
+import simpleFrom from './components/simpleFrom.vue'
 export default {
   name: 'App',
   components: {
@@ -36,7 +39,8 @@ export default {
     // DataBinding
     // Props
     // childToParentProps,
-    signUp
+    // signUp
+    simpleFrom
 
     
    
