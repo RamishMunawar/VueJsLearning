@@ -8,7 +8,7 @@
 -->
    <template>
     <div>
-        <h1>props component</h1>
+        <!-- <h1>props component</h1> -->
         <h3 >{{name}}</h3>
         <h4 v-for="user in users" :key="user.name">
                 {{ user.name }} -- {{ user.email }}
