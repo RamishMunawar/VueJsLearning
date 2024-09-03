@@ -3,7 +3,8 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld />
   <!-- <h1>From with checkbox and radio button in vue js</h1> -->
-  <h1>simple From in vue js</h1>
+  <!-- <h1>simple From in vue js</h1> -->
+  <h1>validation From in vue js</h1>
   <!-- <h1>{{ title }}</h1> -->
   <!-- <Homepage data="Ramish Munawar" msg="new"/>  -->
   <!-- <childComponent /> -->
@@ -13,7 +14,8 @@
      <!-- <Props v-bind:users='users'/> -->
       <!-- <childToParentProps v-on:changetitle="updateTitle($event)"/> -->
        <!-- <signUp /> -->
-        <simpleFrom />
+        <!-- <simpleFrom /> -->
+         <formValidation />
 </div>
 </template>
 
@@ -27,7 +29,8 @@
 // import Props from './components/Props.vue'
 // import childToParentProps from './components/childToParentProps.vue'
 // import signUp  from './components/signUp.vue'
-import simpleFrom from './components/simpleFrom.vue'
+// import simpleFrom from './components/simpleFrom.vue'
+import formValidation from './components/formValidation.vue'
 export default {
   name: 'App',
   components: {
@@ -40,7 +43,8 @@ export default {
     // Props
     // childToParentProps,
     // signUp
-    simpleFrom
+    // simpleFrom
+    formValidation
 
     
    
