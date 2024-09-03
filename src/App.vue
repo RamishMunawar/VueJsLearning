@@ -4,18 +4,20 @@
   <HelloWorld />
   <!-- <h1>From with checkbox and radio button in vue js</h1> -->
   <!-- <h1>simple From in vue js</h1> -->
-  <h1>validation From in vue js</h1>
+  <!-- <h1>validation From in vue js</h1> -->
+   <h1>filter in vue js</h1>
   <!-- <h1>{{ title }}</h1> -->
   <!-- <Homepage data="Ramish Munawar" msg="new"/>  -->
   <!-- <childComponent /> -->
-   <Templates />
+   <!-- <Templates /> -->
    <!-- <htmlStyle /> -->
     <!-- <DataBinding /> -->
      <!-- <Props v-bind:users='users'/> -->
       <!-- <childToParentProps v-on:changetitle="updateTitle($event)"/> -->
        <!-- <signUp /> -->
         <!-- <simpleFrom /> -->
-         <formValidation />
+         <!-- <formValidation /> -->
+         <filter />
 </div>
 </template>
 
@@ -30,7 +32,8 @@
 // import childToParentProps from './components/childToParentProps.vue'
 // import signUp  from './components/signUp.vue'
 // import simpleFrom from './components/simpleFrom.vue'
-import formValidation from './components/formValidation.vue'
+// import formValidation from './components/formValidation.vue'
+import filter   from './components/filter.vue'
 export default {
   name: 'App',
   components: {
@@ -44,21 +47,21 @@ export default {
     // childToParentProps,
     // signUp
     // simpleFrom
-    formValidation
-
+    // formValidation
+     filter
     
    
   },
-  data(){
-        return{
-          title:"props parent"
-        }
-    },
-    methods:{
-      updateTitle(title){
-        this.title=title;
-      }
-    }
+  // data(){
+  //       return{
+  //         title:"props parent"
+  //       }
+  //   },
+  //   methods:{
+  //     updateTitle(title){
+  //       this.title=title;
+  //     }
+  //   }
   // data(){
   //   return{
   //     users:[
