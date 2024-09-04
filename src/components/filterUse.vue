@@ -10,6 +10,6 @@
 
 <script>
 export default {
-  name: 'filter'
+  name: 'filterUse'
 }
 </script>
