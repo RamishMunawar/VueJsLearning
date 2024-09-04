@@ -5,7 +5,12 @@
   <!-- <h1>From with checkbox and radio button in vue js</h1> -->
   <!-- <h1>simple From in vue js</h1> -->
   <!-- <h1>validation From in vue js</h1> -->
-   <h1>filter in vue js</h1>
+   <!-- <h1>filter in vue js</h1> -->
+    <!-- <h1>beforecreate life cycle</h1> -->
+    <!-- <h1>mountd life cycle</h1> -->
+     <h1 v-if="display">beforedestory and destory</h1>
+     <button v-on:click="toggle">toggle</button>
+   <!-- <h1>{{ name | uCase }}</h1> -->
   <!-- <h1>{{ title }}</h1> -->
   <!-- <Homepage data="Ramish Munawar" msg="new"/>  -->
   <!-- <childComponent /> -->
@@ -17,11 +22,18 @@
        <!-- <signUp /> -->
         <!-- <simpleFrom /> -->
          <!-- <formValidation /> -->
-         <filter />
+         <!-- <filterUse /> -->
+          <!-- <increate /> -->
+           <!-- <mount /> -->
+            <destroyvue />
 </div>
+
 </template>
 
 <script>
+import destroyvue from './components/destroyvue.vue'
+// import mount from './components/mount.vue'
+// import increate from './components/increate.vue'
 // import childComponent from './components/childComponent.vue'
 // import HelloWorld from './components/HelloWorld.vue'
 // import Homepage from './components/Homepage.vue'
@@ -33,12 +45,16 @@
 // import signUp  from './components/signUp.vue'
 // import simpleFrom from './components/simpleFrom.vue'
 // import formValidation from './components/formValidation.vue'
-import filter   from './components/filter.vue'
+// import filterUse   from './components/filterUse.vue'
+// import increate from './components/increate.vue'
 export default {
   name: 'App',
   components: {
+    destroyvue
     // HelloWorld,
-    // Homepage,
+    // mount
+    // increate  
+     // Homepage,
     // childComponent,
     // Templates,
     // htmlStyle
@@ -48,10 +64,27 @@ export default {
     // signUp
     // simpleFrom
     // formValidation
-     filter
+    //  filterUse
+  
     
    
   },
+  data(){
+    return{
+         display:true
+    }
+  },
+  methods:{
+    toggle(){
+      this.display=!this.display;
+
+    }
+  }
+  // data(){
+  //   return{
+  //        name:"ramish"
+  //   }
+  // }
   // data(){
   //       return{
   //         title:"props parent"
