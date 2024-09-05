@@ -1,15 +1,15 @@
 <template>
   <div id="app">
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld />
+  <HelloWorld  class=""/>
   <!-- <h1>From with checkbox and radio button in vue js</h1> -->
   <!-- <h1>simple From in vue js</h1> -->
   <!-- <h1>validation From in vue js</h1> -->
    <!-- <h1>filter in vue js</h1> -->
     <!-- <h1>beforecreate life cycle</h1> -->
     <!-- <h1>mountd life cycle</h1> -->
-     <h1 v-if="display">beforedestory and destory</h1>
-     <button v-on:click="toggle">toggle</button>
+     <!-- <h1 v-if="display">beforedestory and destory</h1> -->
+     <!-- <button v-on:click="toggle">toggle</button> -->
    <!-- <h1>{{ name | uCase }}</h1> -->
   <!-- <h1>{{ title }}</h1> -->
   <!-- <Homepage data="Ramish Munawar" msg="new"/>  -->
@@ -25,13 +25,18 @@
          <!-- <filterUse /> -->
           <!-- <increate /> -->
            <!-- <mount /> -->
-            <destroyvue />
+            <!-- <destroyvue /> -->
+             <!-- <dataFetch /> -->
+              <addBootstrapusee />
+
 </div>
 
 </template>
 
 <script>
-import destroyvue from './components/destroyvue.vue'
+import addBootstrapusee from './components/addBootstrapusee.vue'
+// import dataFetch from './components/dataFetch.vue'
+// import destroyvue from './components/destroyvue.vue'
 // import mount from './components/mount.vue'
 // import increate from './components/increate.vue'
 // import childComponent from './components/childComponent.vue'
@@ -50,7 +55,9 @@ import destroyvue from './components/destroyvue.vue'
 export default {
   name: 'App',
   components: {
-    destroyvue
+    addBootstrapusee
+    // dataFetch
+    // destroyvue
     // HelloWorld,
     // mount
     // increate  
@@ -69,17 +76,17 @@ export default {
     
    
   },
-  data(){
-    return{
-         display:true
-    }
-  },
-  methods:{
-    toggle(){
-      this.display=!this.display;
+  // data(){
+  //   return{
+  //        display:true
+  //   }
+  // },
+  // methods:{
+  //   toggle(){
+  //     this.display=!this.display;
 
-    }
-  }
+  //   }
+  // }
   // data(){
   //   return{
   //        name:"ramish"
@@ -108,7 +115,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "~@/assets/scss/vendors/bootstrap-vue/index";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
